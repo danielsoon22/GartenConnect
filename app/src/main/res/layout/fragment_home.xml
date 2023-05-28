@@ -48,10 +48,4 @@
         android:layout_weight="1"
         tools:listitem="@layout/recent_updates_card" />
 
-    <Button
-        android:id="@+id/messageButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Send Message" />
-
 </LinearLayout>

@@ -98,6 +98,7 @@ class HomeFragment : Fragment() {
             navUsername.text = parent?.name
             //aqui va el shared preference
             setNameState(parent?.name.toString())
+            setEmailState(parent?.email.toString())
             Glide.with(this)
                 .load(parent?.photoUrl)
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
@@ -135,6 +136,11 @@ class HomeFragment : Fragment() {
     private fun setNameState(name: String) {
         val editor = sharePreference.edit()
         editor.putString("username", name)
+        editor.apply()
+    }
+    private fun setEmailState(email: String) {
+        val editor = sharePreference.edit()
+        editor.putString("email", email)
         editor.apply()
     }
 

@@ -28,6 +28,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         }
 
         findPreference<EditTextPreference>("username")?.text = sharePreference.getString("username", "")
+        findPreference<EditTextPreference>("email")?.text = sharePreference.getString("email", "")
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
