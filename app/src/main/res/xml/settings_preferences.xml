@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Account Settings">
+
+        <EditTextPreference
+            app:key="username"
+            app:title="Username"
+            app:summary="Change your username"/>
+
+        <EditTextPreference
+            app:key="email"
+            app:title="Email"
+            app:summary="Change your email"/>
+        <Preference
+            app:key="LOGGED_IN"
+            app:title="Sign Out"
+            app:summary="Exit of the account"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Notification Settings">
+
+        <SwitchPreferenceCompat
+            app:key="notifications"
+            app:title="Enable Notifications"
+            app:summary="Turn on to receive notifications"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

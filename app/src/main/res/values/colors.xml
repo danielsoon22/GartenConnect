@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color> <!-- Verde 500 -->
+    <color name="colorPrimaryDark">#388E3C</color> <!-- Verde 700 -->
+    <color name="colorPrimaryLight">#C8E6C9</color> <!-- Verde 100 -->
+    <color name="colorAccent">#8BC34A</color> <!-- Verde claro A200 -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- Texto sobre color primario -->
+    <color name="colorOnSecondary">#000000</color> <!-- Texto sobre color secundario -->
+    <color name="colorBackground">#FFFFFF</color> <!-- Fondo de la aplicación -->
+    <color name="colorSurface">#FFFFFF</color> <!-- Superficie de los componentes de la UI -->
+</resources>

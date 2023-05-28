@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "568800978225",
+    "firebase_url": "https://gitgartenconnect-default-rtdb.firebaseio.com",
+    "project_id": "gitgartenconnect",
+    "storage_bucket": "gitgartenconnect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568800978225:android:6b276a175a1836d0603c10",
+        "android_client_info": {
+          "package_name": "com.example.gartenconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568800978225-e655iifqj0pt37h14fvkndc7123ohdva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoJ7Sj6XiihAMNKGOmYZcUdrjjgG4isyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568800978225-e655iifqj0pt37h14fvkndc7123ohdva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568800978225:android:183abd574083ed7c603c10",
+        "android_client_info": {
+          "package_name": "com.example.gitgartenconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568800978225-e655iifqj0pt37h14fvkndc7123ohdva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoJ7Sj6XiihAMNKGOmYZcUdrjjgG4isyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568800978225-e655iifqj0pt37h14fvkndc7123ohdva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

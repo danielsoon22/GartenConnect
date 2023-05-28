@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.gartenconnect.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.gartenconnect.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.gartenconnect.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_blogFragment"
+            app:destination="@id/blogFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_eventFragment"
+            app:destination="@id/eventFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_studentProgressFragment"
+            app:destination="@id/studentProgressFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_attendanceFragment"
+            app:destination="@id/attendanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogFragment"
+        android:name="com.example.gartenconnect.fragment.BlogFragment"
+        android:label="fragment_blog"
+        tools:layout="@layout/fragment_blog">
+        <action
+            android:id="@+id/action_blogFragment_to_blogDetailFragment"
+            app:destination="@id/blogDetailFragment">
+            <argument
+                android:name="blogPost"
+                app:argType="com.example.gartenconnect.model.BlogPost"
+                app:nullable="true" />
+        </action>
+    </fragment>
+    <dialog
+        android:id="@+id/blogDetailFragment"
+        android:name="com.example.gartenconnect.fragment.BlogDetailFragment"
+        android:label="fragment_blog_detail"
+        tools:layout="@layout/fragment_blog_detail" />
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.example.gartenconnect.fragment.EventFragment"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event">
+        <action
+            android:id="@+id/action_eventFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.example.gartenconnect.fragment.EventDetailFragment"
+        android:label="fragment_event_detail"
+        tools:layout="@layout/fragment_event_detail" />
+    <fragment
+        android:id="@+id/studentProgressFragment"
+        android:name="com.example.gartenconnect.fragment.StudentProgressFragment"
+        android:label="fragment_student_progress"
+        tools:layout="@layout/fragment_student_progress" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.gartenconnect.fragment.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.gartenconnect.fragment.ChatRoomFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat_room">
+        <action
+            android:id="@+id/actionChatFragmentToMessageFragment"
+            app:destination="@id/messageFragment">
+            <argument
+                android:name="chatRoom"
+                app:argType="com.example.gartenconnect.model.ChatRoom" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.gartenconnect.fragment.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.gartenconnect.fragment.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_photoDetailFragment"
+            app:destination="@id/photoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoDetailFragment"
+        android:name="com.example.gartenconnect.fragment.PhotoDetailFragment"
+        android:label="fragment_photo_detail"
+        tools:layout="@layout/fragment_photo_detail" />
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="com.example.gartenconnect.fragment.AttendanceFragment"
+        android:label="fragment_attendance"
+        tools:layout="@layout/fragment_attendance">
+        <action
+            android:id="@+id/action_attendanceFragment_to_studentDetailFragment"
+            app:destination="@id/studentDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentDetailFragment"
+        android:name="com.example.gartenconnect.fragment.StudentDetailFragment"
+        android:label="fragment_student_detail"
+        tools:layout="@layout/fragment_student_detail" />
+
+
+</navigation>

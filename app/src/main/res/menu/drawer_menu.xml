@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <!-- Category 1 -->
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/galleryFragment"
+            android:icon="@drawable/ic_gallery"
+            android:title="Class Photos" />
+        <item
+            android:id="@+id/chatFragment"
+            android:icon="@drawable/ic_chat"
+            android:title="Chat with Teachers" />
+        <item
+            android:id="@+id/studentDetailFragment"
+            android:icon="@drawable/ic_profile"
+            android:title="Child's Profile" />
+    </group>
+
+    <!-- Category 2 -->
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/blogFragment"
+            android:icon="@drawable/ic_blog"
+            android:title="Class Blog" />
+    </group>
+
+</menu>
+
+
